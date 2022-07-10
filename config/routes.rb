@@ -4,9 +4,10 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  # get "todos", to: "todos#index"
-  # post "todos/create", to: "todos#create"
+  # get "users", to: "users#index"
+  # post "users/create", to: "users#create"
   # get "todos/:id", to: "todos#show"
 
   resources :todos
+  resources :users
 end
