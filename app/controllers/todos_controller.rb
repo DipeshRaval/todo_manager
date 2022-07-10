@@ -19,4 +19,13 @@ class TodosController < ApplicationController
     rendered_text = "The new todo created with the id : #{new_todo.id}"
     render plain: rendered_text
   end
+
+  def update
+    id = params[:id]
+    completed = params[:completed]
+    todo = Todo.find(id)
+    todo.completed = completed
+    todo.save!
+    render plain: "Updated todo completed status to #{completed} for todo id : #{todo.id}"
+  end
 end
