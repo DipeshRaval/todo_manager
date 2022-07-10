@@ -13,4 +13,16 @@ class UsersController < ApplicationController
     rendered_text = "The new user created with the id : #{new_user.id}"
     render plain: rendered_text
   end
+
+  def login
+    email = params[:email]
+    password = params[:password]
+
+    user = User.find_by("email = ? and password = ?", email, password)
+    if user
+      render plain: true
+    else
+      render plain: false
+    end
+  end
 end
