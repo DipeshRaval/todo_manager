@@ -1,9 +1,17 @@
-<h1>Hello in todo manager</h1>
-<p>Time : <%= DateTime.now.to_fs(:long) %></p>
-<h3>The total number of the todo in database : <%= Todo.count%></h3>
-<% Todo.all.each do |todo| %>
-  <div>
-    <h3 style="font-size:30px">Todo : <%= todo.id%></h3>
-    <p style="font-size:20px"><%= todo.to_pleasant_string %></p>
-  </div>
-<% end %>
+<article>
+  <h1 class="Main-heading">My Todo-list</h1>
+  <section class="AddTodo">
+    <input
+      type="text"
+      name=""
+      class="AddTodo-text"
+      placeholder="What's next?"
+    />
+    <input type="date" name="" class="AddTodo-date" />
+    <input type="button" value="Add" class="AddTodo-btn" />
+  </section>
+
+  <%= render partial: "todo-section", locals: {section_title: "Due Today",todos: Todo.due_today, show_due_date: false} %>
+  <%= render partial: "todo-section", locals: {section_title: "Ovverdue",todos: Todo.not_completed.overdue, show_due_date: true}%>
+  <%= render partial: "todo-section", locals: {section_title: "Due Later",todos: Todo.due_later, show_due_date: true} %>
+</article>

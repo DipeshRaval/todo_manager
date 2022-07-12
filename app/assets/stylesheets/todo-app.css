@@ -214,10 +214,10 @@ body {
   margin-right: 5px;
 }
 
-.Todo-Overdue {
+.TodoItem-dueDate {
   margin-left: 10px;
-  color: #c53030;
-  font-size: 12px;
+  font-size: 11px;
+  color: #766f81;
 }
 
 .TodoItem-remove {
