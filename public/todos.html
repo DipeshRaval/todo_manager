@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Managment App</title>
+    <link rel="stylesheet" href="todo-app.css" />
+  </head>
+  <body>
+    <article>
+      <h1 class="Main-heading">My Todo-list</h1>
+      <section class="AddTodo">
+        <input
+          type="text"
+          name=""
+          class="AddTodo-text"
+          placeholder="What's next?"
+        />
+        <input type="date" name="" class="AddTodo-date" />
+        <input type="button" value="Add" class="AddTodo-btn" />
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSection-heading">
+          <h2 class="TodoSection-heading-text">Due Today</h2>
+          <p class="TodoSection-remainCount">0/4</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <div class="TodoItem-container">
+              <input type="checkbox" name="" class="TodoCheakBox" />
+              <p class="Todo-text">Submit Saas 201 project</p>
+              <p class="Todo-Overdue">Overdue</p>
+              <a href="#" class="TodoItem-remove"
+                ><img class="remove-icon" src="remove.png" alt="" srcset="" />
+              </a>
+            </div>
+          </li>
+
+          <li class="TodoItem">
+            <div class="TodoItem-container">
+              <input type="checkbox" name="" class="TodoCheakBox" />
+              <p class="Todo-text">Go to Market</p>
+              <!-- <p class="Todo-Overdue">Overdue</p> -->
+              <a href="#" class="TodoItem-remove"
+                ><img class="remove-icon" src="remove.png" alt="" srcset=""
+              /></a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSection-heading">
+          <h2 class="TodoSection-heading-text">Due Tommorow</h2>
+          <p class="TodoSection-remainCount">0/3</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <div class="TodoItem-container">
+              <input type="checkbox" name="" class="TodoCheakBox" />
+              <p class="Todo-text">Start React learning</p>
+              <!-- <p class="Todo-Overdue">Overdue</p> -->
+              <a href="#" class="TodoItem-remove"
+                ><img class="remove-icon" src="remove.png" alt="" srcset="" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="TodoSection">
+        <div class="TodoSection-heading">
+          <h2 class="TodoSection-heading-text">Remaining</h2>
+          <p class="TodoSection-remainCount">0/3</p>
+        </div>
+        <ul>
+          <li class="TodoItem">
+            <div class="TodoItem-container">
+              <input type="checkbox" name="" class="TodoCheakBox" />
+              <p class="Todo-text">Managment of wedding</p>
+              <!-- <p class="Todo-Overdue">Overdue</p> -->
+              <p class="DateLable">Jan 21</p>
+              <a href="#" class="TodoItem-remove"
+                ><img class="remove-icon" src="remove.png" alt="" srcset="" />
+              </a>
+            </div>
+          </li>
+          <li class="TodoItem">
+            <div class="TodoItem-container">
+              <input type="checkbox" name="" class="TodoCheakBox" />
+              <p class="Todo-text">Go to Vadnager</p>
+              <!-- <p class="Todo-Overdue">Overdue</p> -->
+              <p class="DateLable">Jan 22</p>
+              <a href="#" class="TodoItem-remove"
+                ><img class="remove-icon" src="remove.png" alt="" srcset="" />
+              </a>
+            </div>
+          </li>
+          <li class="TodoItem">
+            <div class="TodoItem-container">
+              <input type="checkbox" class="TodoCheakBox" />
+              <p class="Todo-text">Submit Assignment</p>
+              <!-- <p class="Todo-Overdue">Overdue</p> -->
+              <p class="DateLable">Jan 23</p>
+              <a href="#" class="TodoItem-remove"
+                ><img class="remove-icon" src="remove.png" alt="" srcset="" />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>

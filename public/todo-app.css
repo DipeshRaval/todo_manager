@@ -144,7 +144,7 @@ body {
   align-items: stretch;
 }
 
-#AddTodo-text {
+.AddTodo-text {
   margin-right: 10px;
   font-style: 14px;
   color: #453c52;
@@ -154,7 +154,7 @@ body {
   outline: none;
 }
 
-#AddTodo-date {
+.AddTodo-date {
   margin-right: 10px;
   font-style: 14px;
   color: #453c52;
@@ -208,7 +208,7 @@ body {
   padding: 2px 8px;
 }
 
-#TodoCheakBox {
+.TodoCheakBox {
   width: 15px;
   height: 15px;
   margin-right: 5px;
@@ -225,7 +225,7 @@ body {
   margin-left: 10px;
 }
 
-.TodoItem-remove img {
+.TodoItem-remove .remove-icon {
   width: 15px;
   height: 15px;
 }

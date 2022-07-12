@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   # get "users", to: "users#index"
   # post "users/create", to: "users#create"
   # get "todos/:id", to: "todos#show"
+
   post "users/login", to: "users#login"
   resources :todos
   resources :users
