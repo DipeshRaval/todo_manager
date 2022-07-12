@@ -1,0 +1,9 @@
+<h1>Hello in todo manager</h1>
+<p>Time : <%= DateTime.now.to_fs(:long) %></p>
+<h3>The total number of the todo in database : <%= Todo.count%></h3>
+<% Todo.all.each do |todo| %>
+  <div>
+    <h3 style="font-size:30px">Todo : <%= todo.id%></h3>
+    <p style="font-size:20px"><%= todo.to_pleasant_string %></p>
+  </div>
+<% end %>
