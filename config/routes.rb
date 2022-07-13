@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   post "users/login", to: "users#login"
   resources :todos
   resources :users
-  get "/", to: "todos#index"
+  # get "/", to: "todos#index"
 end
