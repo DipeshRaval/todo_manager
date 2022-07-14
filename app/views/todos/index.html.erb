@@ -1,15 +1,15 @@
 <article>
   <h1 class="Main-heading">My Todo-list</h1>
-  <section class="AddTodo">
+  <form class="AddTodo" action="/todos" method = "POST">
     <input
       type="text"
-      name=""
+      name="todo_text"
       class="AddTodo-text"
       placeholder="What's next?"
     />
-    <input type="date" name="" class="AddTodo-date" />
-    <input type="button" value="Add" class="AddTodo-btn" />
-  </section>
+    <input type="date" name="due_date" class="AddTodo-date" />
+    <input type="submit" value="Add" class="AddTodo-btn" />
+  </form>
 
   <%= render partial: "todo-section", locals: {section_title: "Ovverdue",todos: Todo.not_completed.overdue, show_due_date: true}%>
   <%= render partial: "todo-section", locals: {section_title: "Due Today",todos: Todo.due_today, show_due_date: false} %>
