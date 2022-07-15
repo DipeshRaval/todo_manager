@@ -21,6 +21,5 @@ class UsersController < ApplicationController
   end
 
   def new
-    render "new"
   end
 end

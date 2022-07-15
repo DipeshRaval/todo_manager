@@ -1,5 +1,5 @@
 <h2 class="hello_text">Hello, new User!....</h2>
-<%= form_with url: users_path,class: "sign-up-form" do |form| %>
+<%= form_with url: users_path,class: "form" do |form| %>
   <div class="input-box">
     <p class="input-Lable">First Name : </p>
     <%= form.text_field :first_name,class: "form_input" %>
@@ -17,6 +17,6 @@
     <%= form.password_field :password,class: "form_input"%>
   </div>
   <div class="input-box">
-    <%= form.submit "Sign Up",class: "sign_up_btn"%>
+    <%= form.submit "Sign Up",class: "submit_btn"%>
   </div>
 <% end %>
