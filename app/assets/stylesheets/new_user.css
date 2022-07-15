@@ -1,0 +1,40 @@
+.hello_text {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-up-form {
+  background-color: rgb(236, 238, 240);
+  padding: 30px 60px;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-Lable {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form_input {
+  width: 80%;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 2px solid black;
+}
+
+.sign_up_btn {
+  margin-top: 10px;
+  width: 90%;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+}
