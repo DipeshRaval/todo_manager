@@ -11,7 +11,7 @@
     <input type="date" name="due_date" class="AddTodo-date" />
     <input type="submit" value="Add" class="AddTodo-btn" />
   <% end %>
-  <%= render partial: "todo-section", locals: {section_title: "Ovverdue",todos: Todo.not_completed.overdue, show_due_date: true}%>
-  <%= render partial: "todo-section", locals: {section_title: "Due Today",todos: Todo.due_today, show_due_date: false} %>
-  <%= render partial: "todo-section", locals: {section_title: "Due Later",todos: Todo.due_later, show_due_date: true} %>
+  <%= render partial: "todo-section", locals: {section_title: "Ovverdue",todos: @todos.not_completed.overdue, show_due_date: true}%>
+  <%= render partial: "todo-section", locals: {section_title: "Due Today",todos: @todos.due_today, show_due_date: false} %>
+  <%= render partial: "todo-section", locals: {section_title: "Due Later",todos: @todos.due_later, show_due_date: true} %>
 </article>
