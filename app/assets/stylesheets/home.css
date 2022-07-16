@@ -46,3 +46,16 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+.Flash-msg {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: darkred;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Flash-msg:hover {
+  background-color: rgb(239, 188, 188);
+}
