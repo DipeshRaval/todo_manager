@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # post "users/create", to: "users#create"
   # get "todos/:id", to: "todos#show"
 
-  # get "/", to: "home#index"
+  get "/", to: "home#index"
   post "users/login", to: "users#login"
   resources :todos
   resources :users
