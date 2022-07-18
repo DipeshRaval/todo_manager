@@ -9,11 +9,14 @@ Rails.application.routes.draw do
   # get "todos/:id", to: "todos#show"
 
   get "/", to: "home#index"
-  post "users/login", to: "users#login"
+
   resources :todos
   resources :users
 
   get "/signin" => "sessions#new", as: :new_sessions
   post "/signin" => "sessions#create", as: :sessions
   delete "/signout" => "sessions#destroy", as: :destroy_sessions
+
+  get "forgot/password" => "users#forgot_pass", as: :forgot_password
+  put "forgot/password" => "users#update", as: :update_password
 end

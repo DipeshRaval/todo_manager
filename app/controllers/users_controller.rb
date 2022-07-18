@@ -18,6 +18,7 @@ class UsersController < ApplicationController
       # flash[:error] = "You're signed-up succesfully now please sign-in tp continue"
       # redirect_to "/"
 
+      flash[:error] = "You're signed-up succesfully"
       session[:current_user_id] = new_user.id
       redirect_to todos_path
     else
@@ -26,12 +27,17 @@ class UsersController < ApplicationController
     end
   end
 
-  def login
-    email = params[:email]
-    password = params[:password]
-    render plain: User.exists?(["email = ? and password = ?", email, password])
+  def new
   end
 
-  def new
+  def forgot_pass
+    render "update_pass"
+  end
+
+  def update
+    user = User.find_by(first_name: params[:first_name], email: params[:email])
+    user.password = params[:password]
+    user.save!
+    redirect_to new_sessions_path
   end
 end
