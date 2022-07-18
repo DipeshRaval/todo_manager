@@ -30,14 +30,15 @@ class UsersController < ApplicationController
   def new
   end
 
-  def forgot_pass
-    render "update_pass"
-  end
-
   def update
     user = User.find_by(first_name: params[:first_name], email: params[:email])
     user.password = params[:password]
     user.save!
+    flash[:error] = "Your Password successfully changed.."
     redirect_to new_sessions_path
+  end
+
+  def forgot_pass
+    render "update_pass"
   end
 end
