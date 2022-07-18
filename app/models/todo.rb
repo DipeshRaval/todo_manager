@@ -10,10 +10,6 @@ class Todo < ActiveRecord::Base
     "#{id}. #{is_completed} #{todo_text} #{due_date.to_fs(:long)}"
   end
 
-  def self.of_user(user)
-    where(user_id: user.id)
-  end
-
   def self.overdue
     where("due_date < ? ", Date.today)
   end

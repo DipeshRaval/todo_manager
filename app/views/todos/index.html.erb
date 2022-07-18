@@ -7,7 +7,7 @@
       class="AddTodo-text"
       placeholder="What's next?"
     /> %>
-    <%= text_field_tag 'todo_text',nil,placeholder: "What's next?",class: "AddTodo-text"%>
+    <%= text_field_tag 'todo_text',nil,placeholder: "What's next?",:autofocus => "autofocus",class: "AddTodo-text"%>
     <input type="date" name="due_date" class="AddTodo-date" />
     <input type="submit" value="Add" class="AddTodo-btn" />
   <% end %>
